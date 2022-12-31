@@ -1,12 +1,12 @@
+import binarytree.basicfunctions.Inorder;
 import binarytree.simplecode.FindSum;
 
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Started ...");
 
-        FindSum sum = new FindSum();
-        int ans = sum.execute();
-        System.out.println(ans);
+        Inorder inorder = new Inorder();
+        inorder.execute();
 
         System.out.println();
         System.out.println("Ended ...");
