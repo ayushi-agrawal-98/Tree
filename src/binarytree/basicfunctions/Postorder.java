@@ -7,7 +7,6 @@ public class Postorder {
     public void execute() { 
         Node root = Tree.BasicFunctions.buildTree();
         recur(root);
-
     }
 
     private void recur(Node root) {
