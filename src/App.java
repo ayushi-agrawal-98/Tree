@@ -1,14 +1,12 @@
-import binarytree.basicfunctions.Inorder;
-import binarytree.simplecode.FindMaximum;
-import binarytree.simplecode.FindSum;
+import binarytree.intermediatecode.level1.CountOfLargerRightChild;
 import binarytree.simplecode.FindXor;
 
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Started ...");
 
-        FindXor findXor = new FindXor();
-        findXor.execute();
+        CountOfLargerRightChild countOfLargerRightChild = new CountOfLargerRightChild();
+        System.out.println(countOfLargerRightChild.execute());
 
         System.out.println();
         System.out.println("Ended ...");

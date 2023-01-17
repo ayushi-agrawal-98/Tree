@@ -28,4 +28,26 @@ public class Tree {
             return two;
         }
     }
+
+    public static class IntermediateCode {
+        public static class Level1 {
+            public static Node buildTree() {
+                Node hundred1 = new Node(100);
+                Node two = new Node(2, hundred1, null);
+                Node ninetynine = new Node(99, null, two);
+                Node three1 = new Node(3);
+                Node four1 = new Node(4);
+                Node hundred2 = new Node(100, three1, four1);
+                Node twenty = new Node(20, hundred2, ninetynine);
+                Node three2 = new Node(3);
+                Node three3 = new Node(3);
+                Node five = new Node(5, three2, three3);
+                Node four2 = new Node(4);
+                Node ten = new Node(10, five, four2);
+                Node one = new Node(1, ten, twenty);
+                return one;
+            }
+
+        }
+    }
 }
