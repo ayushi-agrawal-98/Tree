@@ -1,8 +1,41 @@
 package binarytree;
 
+import java.rmi.ConnectIOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import binarytree.utils.Node;
 
 public class Tree {
+
+    public static Node buildCompleteTree(List<Character> list){
+        int n = list.size();
+        ArrayList<Node> tree = new ArrayList<Node>();
+
+        for(int i = 0; i < n; i++) {
+            Node cur = list.get(i) == 'N' ? null : new Node(Integer.parseInt(String.valueOf(list.get(i))));
+            tree.add(cur);
+
+            if(i == 0) continue;
+            int parentIdx = (i - 1) / 2;
+            Node parent = tree.get(parentIdx);
+
+            if((i - 1) % 2 == 0) parent.left = cur;
+            else parent.right = cur;
+        }
+
+        // for(int i = 0; i < n; i++) {
+        //     if(2 * i + 1 >= n) break;
+        //     Node left = tree.get(2 * i + 1);
+        //     Node right = tree.get(2 * i + 2);
+        //     Node cur = tree.get(i);
+        //     cur.left = left;
+        //     cur.right = right;
+        // }
+
+        return tree.get(0);
+        
+    }
 
     public static class BasicFunctions {
         public static Node buildTree() {
