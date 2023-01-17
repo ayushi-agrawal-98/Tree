@@ -8,8 +8,7 @@ public class CountOfLargerLeftChild implements IntExecutor {
     @Override
     public int execute() {
         Node root = Tree.IntermediateCode.Level1.buildTree();
-        Pair ans = recur(root);
-        return ans.count;
+        return recur(root).count;
     }
 
     public Pair recur(Node root){
