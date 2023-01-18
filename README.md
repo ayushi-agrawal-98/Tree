@@ -20,8 +20,8 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 # ToDo
 1. CountOfLargerRightChild [Done]
 2. CountOfLargerLeftChild [Done]
-3. CountOfLargerRightSubtree [self]
-4. CountOfLargerLeftSubtree [self]
-5. CountOfLargerLeftAndRightChild (using custome class)
-6. CountOfLargerLeftAndRightSubtree (using custom class)
-7. Find winner from negatives and positives (using enum)
+3. CountOfLargerRightSubtree [Done]
+4. CountOfLargerLeftSubtree [Done]
+5. CountOfLargerLeftAndRightChild (using custome class) [Done]
+6. CountOfLargerLeftAndRightSubtree (using custom class) [Done]
+7. Find winner from negatives and positives (using enum) 

@@ -1,5 +1,5 @@
-import binarytree.intermediatecode.level1.CountOfLargerLeftAndRightChild;
-import binarytree.intermediatecode.level1.CountOfLargerLeftAndRightChild.Pair;
+import binarytree.intermediatecode.level1.CountOfLargerLeftAndRightSubtree;
+import binarytree.utils.Pair;
 
 
 public class App {
@@ -7,9 +7,9 @@ public class App {
         System.out.println("Started ...");
 
         //Tree tree = new Tree();
-        CountOfLargerLeftAndRightChild countLandR = new CountOfLargerLeftAndRightChild();
-        Pair ans1 = countLandR.execute();
-        System.out.println(ans1);    
+      CountOfLargerLeftAndRightSubtree object = new CountOfLargerLeftAndRightSubtree();
+       Pair ans = object.execute();
+       System.out.println(ans);
 
         System.out.println();
         System.out.println("Ended ...");
